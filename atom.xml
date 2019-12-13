@@ -3,11 +3,11 @@
   <title>犹豫就会败北</title>
   
   <subtitle>所谓命运，大都是自己做出的蠢事！</subtitle>
-  <link href="/child/atom.xml" rel="self"/>
+  <link href="/atom.xml" rel="self"/>
   
-  <link href="https://saber1122.github.io/child/"/>
+  <link href="http://saber1122.github.io/"/>
   <updated>2019-12-01T02:16:02.238Z</updated>
-  <id>https://saber1122.github.io/child/</id>
+  <id>http://saber1122.github.io/</id>
   
   <author>
     <name>御灵龍</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>连接本地mysql报1067错误</title>
-    <link href="https://saber1122.github.io/child/uncategorized/%E7%AC%AC%E4%B8%80%E7%AF%87/"/>
-    <id>https://saber1122.github.io/child/uncategorized/%E7%AC%AC%E4%B8%80%E7%AF%87/</id>
+    <link href="http://saber1122.github.io/uncategorized/%E7%AC%AC%E4%B8%80%E7%AF%87/"/>
+    <id>http://saber1122.github.io/uncategorized/%E7%AC%AC%E4%B8%80%E7%AF%87/</id>
     <published>2019-11-30T08:34:00.000Z</published>
     <updated>2019-12-01T02:16:02.238Z</updated>
     
@@ -40,8 +40,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://saber1122.github.io/child/uncategorized/hello-world/"/>
-    <id>https://saber1122.github.io/child/uncategorized/hello-world/</id>
+    <link href="http://saber1122.github.io/uncategorized/hello-world/"/>
+    <id>http://saber1122.github.io/uncategorized/hello-world/</id>
     <published>2019-11-30T03:31:24.150Z</published>
     <updated>2019-11-30T06:38:52.164Z</updated>
     
