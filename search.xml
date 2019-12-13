@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>连接本地mysql报1067错误</title>
+    <url>/uncategorized/20191201/</url>
+    <content><![CDATA[<h1 id="错误信息"><a href="#错误信息" class="headerlink" title="错误信息"></a>错误信息</h1><p>用Navicat连接本地数据库，报错！错误忘记截图了<br>然后看本地的mysql服务，没有启动，于是便尝试启动，报错！</p>
+<a id="more"></a>
+
+<p><img src="https://img-blog.csdnimg.cn/20190529195625101.png" alt="图片是截取的别人的">.<br>先别着急百度，先看下数据库的日志文件和windows下的工作日志！<br><img src="https://img-blog.csdnimg.cn/20190529201219667.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzODUyMzQ3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2019052920133912.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzODUyMzQ3,size_16,color_FFFFFF,t_70" alt="错误信息"><br>然而我并没有看懂！2333333</p>
+<h3 id="windows日志："><a href="#windows日志：" class="headerlink" title="windows日志："></a>windows日志：</h3><p><img src="https://img-blog.csdnimg.cn/20190529201524226.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzODUyMzQ3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>作者地址：<br><a href="https://blog.csdn.net/qq_32445337/article/details/62886160" target="_blank" rel="noopener">https://blog.csdn.net/qq_32445337/article/details/62886160</a><br>很可惜，我并不是报的这种错，而是：Aborting</p>
+<p><img src="https://img-blog.csdnimg.cn/20190529201655246.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzODUyMzQ3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>在网上找了很多种方法，包括：</p>
+<ol>
+<li>MySql的安装文件夹找到my.ini里有一句：default-storage-engine=INNODB改成MYISAM</li>
+<li>安装目录下，缺少文件<br><img src="https://img-blog.csdnimg.cn/20190529195929608.png" alt="在这里插入图片描述"><br>或者是C盘  C:\ProgramData\MySQL\MySQL Server 5.5\data\mysql下缺少上面三个文件。解决方法：没有的复制过去一份就可以了。</li>
+<li>打开下年这个文件，在mysql安装目录下<br><img src="https://img-blog.csdnimg.cn/20190529200307530.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzODUyMzQ3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>在文件末尾添加：<br>#手动添加，解决mysql1067问题<br> basedir=E:\ChZhi\Tool\MySQL        —安装路径<br> datadir=C:\ProgramData\MySQL\MySQL Server 5.5\data        —-数据路径</li>
+</ol>
+<p>方法还有两三种，然后都不可以！</p>
+<h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><p>保留上面第三部的设置，将mysql安装路径下的 data 文件夹，整个替换C盘下data文件夹。<br><img src="https://img-blog.csdnimg.cn/20190529200812272.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzODUyMzQ3,size_16,color_FFFFFF,t_70" alt="mysql安装路径"><br><img src="https://img-blog.csdnimg.cn/20190529200855695.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMzODUyMzQ3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>启动服务器，成功！！！</p>
+<p>但，不知道是不是我脸黑，数据库启动成功了，但用Navicat连接又报 <strong>1045</strong> 错误！！！<br>根据网上的方法，链接地址在下面！</p>
+<p><a href="https://blog.csdn.net/lzf_hlh/article/details/80885139" target="_blank" rel="noopener">https://blog.csdn.net/lzf_hlh/article/details/80885139</a></p>
+<p>解决！</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/uncategorized/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start12345"><a href="#Quick-Start12345" class="headerlink" title="Quick Start12345"></a>Quick Start12345</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+</search>
