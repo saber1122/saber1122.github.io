@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>代码整洁之道（持续更新）</title>
+    <url>/uncategorized/20191217/</url>
+    <content><![CDATA[<p>最近在读《代码整洁之道》，觉得里面有些内容的确受益匪浅，故记之。</p>
+<h1 id="专业主义"><a href="#专业主义" class="headerlink" title="专业主义"></a>专业主义</h1><ul>
+<li>不破坏软件功能，即不留有bug的程序。</li>
+<li>确信代码的正常运行，写单元测试类最好覆盖每一行代码。百分百覆盖是不可能的，不过尽量高覆盖率。<a id="more"></a>
+
+</li>
+</ul>
+<p><strong>所有软件项目的根本指导原则：</strong> 软件要易于修改！</p>
+<ul>
+<li><ul>
+<li>如果想要自己手中的代码灵活多变，就应该时常修改。</li>
+</ul>
+</li>
+<li><ul>
+<li>增添新功能时，不要破坏原来的结构。</li>
+</ul>
+</li>
+<li><p>每天最好坚持学习。</p>
+</li>
+</ul>
+<p>书中说每个专业软件开发人员必须精通的事项</p>
+<blockquote>
+<p>设计模式。24中设计模式<br>设计原则。了解DOLID原则，深刻理解组件设计原则。<br>方法。理解精益、看板、瀑布、结构化分析、结构化设计等。<br>实践。掌握面向对象设计，结构化编程等。<br>工件。必须了解使用UML图，DFD图，结构图，流程图等。</p>
+</blockquote>
+<ul>
+<li>练习。主要是训练大脑和手指，以及快捷键。比如每天做两个简单的排序。</li>
+<li>了解业务领域。开发与什么有关的行业，就多多少少的了解一点，没坏处。</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>阅读</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>连接本地mysql报1067错误</title>
     <url>/uncategorized/20191201/</url>
     <content><![CDATA[<h1 id="错误信息"><a href="#错误信息" class="headerlink" title="错误信息"></a>错误信息</h1><p>用Navicat连接本地数据库，报错！错误忘记截图了<br>然后看本地的mysql服务，没有启动，于是便尝试启动，报错！</p>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://saber1122.github.io/"/>
-  <updated>2019-12-13T10:10:15.899Z</updated>
+  <updated>2019-12-17T15:10:41.649Z</updated>
   <id>https://saber1122.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>代码整洁之道（持续更新）</title>
+    <link href="https://saber1122.github.io/uncategorized/20191217/"/>
+    <id>https://saber1122.github.io/uncategorized/20191217/</id>
+    <published>2019-12-17T14:53:35.000Z</published>
+    <updated>2019-12-17T15:10:41.649Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近在读《代码整洁之道》，觉得里面有些内容的确受益匪浅，故记之。&lt;/p&gt;
+&lt;h1 id=&quot;专业主义&quot;&gt;&lt;a href=&quot;#专业主义&quot; class=&quot;headerlink&quot; title=&quot;专业主义&quot;&gt;&lt;/a&gt;专业主义&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;不破坏软件功能，即不留有bug的程序。&lt;/li&gt;
+&lt;li&gt;确信代码的正常运行，写单元测试类最好覆盖每一行代码。百分百覆盖是不可能的，不过尽量高覆盖率。
+    
+    </summary>
+    
+    
+    
+      <category term="阅读" scheme="https://saber1122.github.io/tags/%E9%98%85%E8%AF%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>连接本地mysql报1067错误</title>
